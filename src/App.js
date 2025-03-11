@@ -1,6 +1,9 @@
+import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
+      <div className="container m-5">
+        <Weather />
         <footer>
           This project was coded by Magda Tudora and it is open sourced on{" "}
           <a
