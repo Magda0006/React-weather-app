@@ -1,10 +1,10 @@
 import "./App.css";
-import Weather from "./Weather";
+import Form from "./Form";
 
 function App() {
   return (
     <div className="App container-fluid ">
-      <Weather defaultCity="New York" />
+      <Form defaultCity="New York" />
       <footer>
         This project was coded by Magda Tudora and it is open sourced on{" "}
         <a
