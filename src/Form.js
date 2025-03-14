@@ -34,6 +34,7 @@ export default function Form(props) {
             </div>
           </div>
         </form>
+        <WeatherC city={city} />
       </div>
     );
   } else {
@@ -55,6 +56,7 @@ export default function Form(props) {
             </div>
           </div>
         </form>
+        <DefaultData city={city} />
       </div>
     );
   }
