@@ -12,7 +12,11 @@ export default function DefaultData(props) {
       <WeatherInfoTop weather={weather} />
       <div className="row">
         <div className="col-6">
-          <img src={weather.icon} alt={weather.description} />{" "}
+          <img
+            className="mainIcon"
+            src={weather.icon}
+            alt={weather.description}
+          />{" "}
           <WeatherTemperature
             temperature={weather.temperature}
             unit={unit}

@@ -5,10 +5,9 @@ import WeatherInfoTop from "./WeatherInfoTop";
 import WeatherInfoBottom from "./WeatherInfoBottom";
 import DefaultData from "./DefaultData";
 import "./Weather.css";
+import WeatherForecast from "./WeatherForecast.js";
 
 export default function Form(props) {
-
-
   const [city, setCity] = useState(props.defaultCity);
   const [unit, setUnit] = useState("metric");
   const [weather, setWeather] = useState({ submitted: false });
@@ -66,7 +65,11 @@ export default function Form(props) {
           <WeatherInfoTop weather={weather} />
           <div className="row">
             <div className="col-6">
-              <img src={weather.icon} alt={weather.description} />{" "}
+              <img
+                className="mainIcon"
+                src={weather.icon}
+                alt={weather.description}
+              />{" "}
               <WeatherTemperature
                 temperature={weather.temperature}
                 unit={unit}
@@ -75,6 +78,7 @@ export default function Form(props) {
             </div>
             <WeatherInfoBottom weather={weather} />
           </div>
+          <WeatherForecast city={city} />
         </div>
       </div>
     );

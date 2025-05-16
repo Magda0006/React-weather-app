@@ -16,10 +16,11 @@
   list-style: none;
   padding-left: 0;
 }
-.weather img {
+.mainIcon {
   display: inline-block;
-  line-height: 56px;
+  line-height: 1px;
   vertical-align: middle;
+  max-width: 100%;
 }
 .weather .temperature {
   font-family: Google Sans, Arial, sans-serif;
@@ -37,4 +38,7 @@
 a {
   text-decoration: none;
   color: #0e6efd;
+}
+.forecastIcon {
+  max-width: 60px;
 }
