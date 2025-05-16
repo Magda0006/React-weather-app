@@ -7,6 +7,8 @@ import DefaultData from "./DefaultData";
 import "./Weather.css";
 
 export default function Form(props) {
+
+
   const [city, setCity] = useState(props.defaultCity);
   const [unit, setUnit] = useState("metric");
   const [weather, setWeather] = useState({ submitted: false });
